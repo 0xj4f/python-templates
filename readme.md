@@ -15,6 +15,54 @@ then you continuously improve on them
 - sql - python functions that interacts with sql
 - util - python functions as generalized utility 
 
+## Coding Philosophies
+
+### Keep it DRY
+
+"Don't Repeat Your Self"
+
+
+### S.O.L.I.D. Principles
+
+S – Single Responsibility Principle
+O – Open-Closed Principle
+L – Liskov Substitution Principle
+I – Interface Segregation Principle
+D – Dependency Inversion Principle
+
+### Clean Coding 
+> use name revealing variables and functions
+bad example
+```js
+import { sub } from './yt';
+
+function run(unit){
+  const p = unit.partList[42]
+  p.sub.lsn((w) => {
+    if (w === 'banana' ){
+      sub(unit)
+    }
+  })
+}
+```
+
+Good Example
+```js
+import { forceToSubscribe } from './youtube';
+
+const BRAIN_INDEX = 42;
+const TRIGGER_WORD = 'banana';
+
+function brainwashToSubscribeOnTriggerWord(viewer){
+  const brain = viewer.organs[TRIGGER_WORD];
+
+  brain.subconscious.listenForWord((word) => {
+    if (word === TRIGGER_WORD) {
+      forceToSubscribe(viewer)
+    }
+  })
+}
+```
 
 ## Rush 
 
