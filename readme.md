@@ -23,15 +23,17 @@ then you continuously improve on them
 
 
 ### S.O.L.I.D. Principles
-
+```
 S – Single Responsibility Principle
 O – Open-Closed Principle
 L – Liskov Substitution Principle
 I – Interface Segregation Principle
 D – Dependency Inversion Principle
+```
 
 ### Clean Coding 
-> use name revealing variables and functions
+> use name revealing variables and functions.  
+
 bad example
 ```js
 import { sub } from './yt';
