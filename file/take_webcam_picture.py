@@ -32,7 +32,8 @@ def capture_picture(output_dir='/tmp/', filename=None):
 
     # Release the webcam
     cap.release()
+    return output_file
 
 if __name__ == "__main__":
     # Capture a picture and save it to the default location
-    capture_picture()
+    print(capture_picture())
