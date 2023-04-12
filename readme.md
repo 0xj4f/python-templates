@@ -18,9 +18,7 @@ then you continuously improve on them
 ## Coding Philosophies
 
 ### Keep it DRY
-
 "Don't Repeat Your Self"
-
 
 ### S.O.L.I.D. Principles
 ```
@@ -68,8 +66,8 @@ function brainwashToSubscribeOnTriggerWord(viewer){
 
 ## Python Style Guides
 
-https://peps.python.org/pep-0008/
-https://google.github.io/styleguide/pyguide.html
+- https://peps.python.org/pep-0008/
+- https://google.github.io/styleguide/pyguide.html
 
 ## Rush 
 
