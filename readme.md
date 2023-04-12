@@ -66,6 +66,11 @@ function brainwashToSubscribeOnTriggerWord(viewer){
 }
 ```
 
+## Python Style Guides
+
+https://peps.python.org/pep-0008/
+https://google.github.io/styleguide/pyguide.html
+
 ## Rush 
 
 go to ./freelance.md 
