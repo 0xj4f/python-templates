@@ -1,6 +1,12 @@
 # Python Function Templates
+> Here are some of the bootsrapped functions that I regularly use
 
-Here are some of the bootsrapped functions that I regularly use
+You aren’t meant to master a Programming Language in the beginning.
+You’re meant to go build them 
+
+You don’t master a programming concept, 
+you apply them in numerous project.
+then you continuously improve on them
 
 ## Contents
 
@@ -10,6 +16,59 @@ Here are some of the bootsrapped functions that I regularly use
 - sql - python functions that interacts with sql
 - util - python functions as generalized utility 
 
+## Coding Philosophies
+
+### Keep it DRY
+"Don't Repeat Your Self"
+
+### S.O.L.I.D. Principles
+```
+S – Single Responsibility Principle
+O – Open-Closed Principle
+L – Liskov Substitution Principle
+I – Interface Segregation Principle
+D – Dependency Inversion Principle
+```
+
+### Clean Coding 
+> use name revealing variables and functions.  
+
+bad example
+```js
+import { sub } from './yt';
+
+function run(unit){
+  const p = unit.partList[42]
+  p.sub.lsn((w) => {
+    if (w === 'banana' ){
+      sub(unit)
+    }
+  })
+}
+```
+
+Good Example
+```js
+import { forceToSubscribe } from './youtube';
+
+const BRAIN_INDEX = 42;
+const TRIGGER_WORD = 'banana';
+
+function brainwashToSubscribeOnTriggerWord(viewer){
+  const brain = viewer.organs[TRIGGER_WORD];
+
+  brain.subconscious.listenForWord((word) => {
+    if (word === TRIGGER_WORD) {
+      forceToSubscribe(viewer)
+    }
+  })
+}
+```
+
+## Python Style Guides
+
+- https://peps.python.org/pep-0008/
+- https://google.github.io/styleguide/pyguide.html
 
 ## Rush 
 
