@@ -4,6 +4,7 @@ Here are some of the bootsrapped functions that I regularly use
 
 ## Contents
 
+- algorithms - python functions that uses algorithms
 - file - python functions that deals in file systems
 - rest - python functions that deals with rest apis
 - sql - python functions that interacts with sql
