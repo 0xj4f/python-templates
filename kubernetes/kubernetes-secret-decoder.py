@@ -4,7 +4,9 @@ import yaml
 # pip3 install pyyaml
 
 """
+########################################
 yaml structure
+########################################
 apiVersion: v1
 items:
 - apiVersion: v1
@@ -13,7 +15,9 @@ items:
     allowed-max-age: MzYwMA==
     key: base64 Value
 
-USAGE: 
+########################################
+# USAGE: 
+########################################
 python3 kubernetes-secret-decoder.py secrets.yaml
 Key: allowed-headers
 Decoded Value: *
