@@ -54,7 +54,7 @@ client.close()
 
 # Create a tar.gz file of the backup folder
 with tarfile.open(tar_filename, 'w:gz') as tar:
-    tar.add(folder_name)
+    tar.add(folder_name, arcname=os.path.basename(folder_name))
 
 # Remove the backup folder
 shutil.rmtree(folder_name)
