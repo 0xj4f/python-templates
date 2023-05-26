@@ -2,6 +2,11 @@ import pymongo
 import datetime
 import tarfile
 
+"""
+pip3 install pymongo 
+"""
+
+
 # MongoDB connection details
 mongo_host = 'your-mongo-host'
 mongo_port = 27017
