@@ -1,5 +1,9 @@
 import subprocess
+"""
+this needs exiftool
+https://exiftool.org/
 
+"""
 class MetadataEditor:
     def add_metadata(self, file, metadata):
         """Adds metadata to a file using exiftool."""
