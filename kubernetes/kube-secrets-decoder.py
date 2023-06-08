@@ -1,7 +1,45 @@
 import base64
 import sys
 import yaml
+# pip3 install pyyaml
 
+"""
+Dependencies:
+pip3 install pyyaml
+Test: Python 3.11.3 
+########################################
+yaml structure
+########################################
+apiVersion: v1
+items:
+- apiVersion: v1
+  data:
+    allowed-headers: Kg==
+    allowed-max-age: MzYwMA==
+    key: base64 Value
+
+########################################
+# USAGE: 
+########################################
+python3 kubernetes-secret-decoder.py secrets.yaml
+Key: allowed-headers
+Decoded Value: *
+---
+Key: allowed-max-age
+Decoded Value: 3600
+---
+Key: allowed-methods
+Decoded Value: GET, PUT, POST, DELETE, PATCH, OPTIONS
+---
+Key: api-base-path
+Decoded Value: https://example.io
+---
+Key: aws-access-key-id
+Decoded Value: AAAAAAAA
+---
+Key: aws-region
+Decoded Value: us-east-2
+"""
 
 def load_yaml(file_path):
     with open(file_path) as f:
