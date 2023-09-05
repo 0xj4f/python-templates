@@ -36,3 +36,27 @@ Yes:
       if jelly_bean.color == 'black')
 
 ```
+
+
+## ASYNC 
+
+### ASYNC HTTP POST
+
+v1
+```python
+import asyncio
+import aiohttp
+async def login(url, user, password):
+    async with aiohttp.ClientSession() as session:
+        data = {'user': user, 'password': password}
+        async with session.post(url, data=data) as response:
+            return await response.json()
+async def main():
+    url = 'example.api/api/login'
+    wordlist = ['user1', 'user2', 'user3']
+    tasks = [login(url, user, 'word') for user in wordlist]
+    results = await asyncio.gather(*tasks)
+    print(results)
+if __name__ == '__main__':
+    asyncio.run(main())
+```
