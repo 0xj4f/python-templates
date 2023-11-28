@@ -3,6 +3,15 @@ import bluetooth
 sudo apt-get install libbluetooth-dev
 pip3 install pybluez
 
+Manually Installing the PyBluez
+wget https://github.com/pybluez/pybluez/archive/master.tar.gz
+
+go to the file's root directory
+python setup.py install
+
+for Bluetooth Low Energy support (GNU/Linux only):
+pip install -e .[ble]
+
 
 Pre Complied Bluetooth
 - https://www.lfd.uci.edu/~gohlke/pythonlibs/#pybluez 
