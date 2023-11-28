@@ -50,3 +50,4 @@ class BluetoothEnumerator:
 if __name__ == "__main__":
     enumerator = BluetoothEnumerator()
     devices = enumerator.scan_for_devices()
+    print(devices)
