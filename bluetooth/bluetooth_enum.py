@@ -4,6 +4,9 @@ sudo apt-get install libbluetooth-dev
 pip3 install pybluez
 
 
+Pre Complied Bluetooth
+- https://www.lfd.uci.edu/~gohlke/pythonlibs/#pybluez 
+
 References:
 - https://pybluez.readthedocs.io/en/latest/install.html
 - https://people.csail.mit.edu/albert/bluez-intro/c212.html
