@@ -126,6 +126,28 @@ https://www.geeksforgeeks.org/build-a-virtual-assistant-using-python/
 https://www.geeksforgeeks.org/voice-assistant-using-python/?ref=lbp
 https://www.geeksforgeeks.org/personal-voice-assistant-in-python/?ref=lbp
 
+## Decorators
+```py
+def my_decorator(func):
+  def wrapper():
+    print("Print before function")
+    func()
+    print("Print after function")
+  return wrapper
+
+@my_decorator
+def say_hello():
+  print("Hello There!")
+
+say_hello()
+```
+output
+```
+Print before function
+Hello There!
+Print after function
+```
+
 ## Reference:
 
 https://www.geeksforgeeks.org/optimization-tips-python-code/?ref=rp
