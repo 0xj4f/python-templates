@@ -25,3 +25,8 @@ if __name__ == "__main__":
         download_video(video_url)
     else:
         print("Please provide a valid video URL as a command line argument.")
+
+"""
+to convert to mp3
+ffmpeg -i filename.mp4 filename.mp3
+```
