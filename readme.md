@@ -70,6 +70,40 @@ function brainwashToSubscribeOnTriggerWord(viewer){
 - https://peps.python.org/pep-0008/
 - https://google.github.io/styleguide/pyguide.html
 
+### Best Practices for Naming Files in Python
+
+1. **Use lowercase letters and underscores (`snake_case`)**:
+   - **Example**: `my_script.py`, `data_processing.py`
+   - **Reason**: Using lowercase letters and underscores (snake_case) is consistent with PEP 8, the Python Enhancement Proposal that outlines conventions for writing readable code. This style improves readability and consistency.
+
+2. **Be descriptive and concise**:
+   - **Example**: `data_loader.py` instead of `dl.py`
+   - **Reason**: Descriptive names make it clear what the file's purpose is, which helps other developers (and your future self) understand the project structure and find files quickly.
+
+3. **Avoid using reserved keywords and built-in names**:
+   - **Example**: Avoid names like `list.py`, `test.py`
+   - **Reason**: Using reserved keywords or names of built-in modules can cause conflicts and unexpected behaviors in your code.
+
+4. **Use hyphens only if necessary** (and prefer underscores):
+   - **Example**: `my_script.py` instead of `my-script.py`
+   - **Reason**: While some filesystems allow hyphens, underscores are more common in Python code and are recommended by PEP 8. Hyphens can also cause issues if used in module names since they are not valid characters in Python identifiers.
+
+5. **Reflect the content or functionality of the file**:
+   - **Example**: `user_authentication.py` for a file handling user authentication logic
+   - **Reason**: Clear, content-specific names help quickly identify the purpose of the file without needing to open and read through the code.
+
+6. **Avoid excessively long names**:
+   - **Example**: `process_data.py` instead of `data_processing_for_experiments.py`
+   - **Reason**: While being descriptive is important, excessively long names can be cumbersome to type and manage. Aim for a balance between descriptiveness and brevity.
+
+7. **Use consistent naming conventions throughout the project**:
+   - **Example**: If you use `snake_case` for one file, use it for all files.
+   - **Reason**: Consistency across your project makes it easier to navigate and reduces cognitive load when switching between different parts of the project.
+
+### Summary
+
+Following these best practices for naming files in Python can lead to a more organized, readable, and maintainable codebase. Consistent and descriptive naming conventions help developers quickly understand the structure and purpose of files within a project, making collaboration and future development smoother.
+
 ## Rush 
 
 go to ./freelance.md 
