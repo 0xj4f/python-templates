@@ -146,7 +146,7 @@ class Crawler:
 
 async def main():
     filterer = UrlFilterer(
-        allowed_domains={"mcoding.io"},
+        allowed_domains={"192.168.254.109:2368", "localhost"},
         allowed_schemes={"http", "https"},
         allowed_filetypes={".html", ".php", ""},
     )
@@ -155,7 +155,7 @@ async def main():
     async with httpx.AsyncClient() as client:
         crawler = Crawler(
             client=client,
-            urls=["https://mcoding.io/"],
+            urls=["http://192.168.254.109:2368/"],
             filter_url=filterer.filter_url,
             workers=10,
             limit=100,
@@ -174,3 +174,21 @@ async def main():
 
 if __name__ == "__main__":
     asyncio.run(main(), debug=True)
+
+
+"""
+https://docs.python.org/3/library/asyncio.html
+in› 
+╰─$ python3 async/examples/web_crawler.py
+Results:
+https://mcoding.io/
+https://mcoding.io/about-james-murphy
+https://mcoding.io/contact
+https://mcoding.io/privacy-policy
+https://mcoding.io/services
+https://mcoding.io/terms-and-conditions
+https://mcoding.io/video-production
+Crawled: 7 URLs
+Found: 7 URLs
+Done in 2.15s
+"""
